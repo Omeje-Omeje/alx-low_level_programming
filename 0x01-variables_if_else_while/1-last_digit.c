@@ -11,7 +11,7 @@ int main(void)
 {
 	int n;
 	int lastdigit;
-	char string = "6 and not 0";
+	char string[] = "6 and not 0";
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
