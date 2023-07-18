@@ -1,10 +1,8 @@
 #include "main.h"
-/**
- * main - Print alphabet in lowercase
- *
- * Return: Always 0 (Success)
- */
 
+/**
+ * print_alphabet - Function to print alphabet
+ */
 void print_alphabet(void)
 {
 	char c = 'a';
