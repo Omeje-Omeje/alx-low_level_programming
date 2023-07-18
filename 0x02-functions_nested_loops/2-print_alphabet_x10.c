@@ -6,6 +6,7 @@
 
 void print_alphabet_x10(void)
 {
+	/* declare variables */
 	char c = 'a';
 	int i;
 
