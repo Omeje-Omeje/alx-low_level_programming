@@ -8,6 +8,7 @@
  */
 int _islower(int c)
 {
+	/* check to see if c is lowercase */
 	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
