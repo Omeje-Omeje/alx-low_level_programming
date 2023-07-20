@@ -33,7 +33,6 @@ void times_table(void)
 				}
 			}
 			printf("%d", i * j);
-			
 		}
 		putchar('\n');
 	}
