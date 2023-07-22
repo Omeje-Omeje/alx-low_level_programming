@@ -9,6 +9,8 @@
 
 int _isupper(int c)
 {
+	/* loop the alphabets */
+
 	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
