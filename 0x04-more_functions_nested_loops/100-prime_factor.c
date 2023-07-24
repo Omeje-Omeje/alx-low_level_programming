@@ -15,9 +15,9 @@ int main(void)
 
 	while (x != 0)
 	{
-		if (x % 2 != 0)
+		if (x % y != 0)
 		{
-			x = x + 1;
+			y = y + 1;
 		}
 		else
 		{
@@ -27,7 +27,7 @@ int main(void)
 
 			if (x == 1)
 			{
-				printf("The largest prime factor = %ld\n", maxPrime);
+				printf("The largest prime factor = %li\n", maxPrime);
 
 				break;
 			}
