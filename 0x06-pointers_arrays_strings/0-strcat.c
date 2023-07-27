@@ -12,9 +12,9 @@ char *_strcat(char *dest, char *src)
 {
 	char *begin = dest;
 
-	while (*dest)
+	while (*dest != '\0')
 	{
-		*dest++;
+		dest++;
 	}
 	while (*src != '\0')
 	{
