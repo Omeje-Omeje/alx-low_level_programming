@@ -34,7 +34,7 @@ void print_to_98(int n)
 		printf("%d", i);
 		if (n < 0)
 		{
-			for (i = n; i <= 98; i++)
+			for (i = n + 1; i <= 98; i++)
 			{
 				putchar(',');
 				putchar(' ');
