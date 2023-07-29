@@ -10,7 +10,8 @@
 
 void print_to_98(int n)
 {
-	int i, k = 0, j = 0, m = 0;
+	int i, k = 0, m = 0;
+	const char *sep = "";
 
 	if (n > 98)
 	{
@@ -24,24 +25,21 @@ void print_to_98(int n)
 			printf("%d", i);
 		}
 	}
+	if (n < 0)
+	{
+		for (i = n; i < 98; i++)
+		{
+			fputs(sep, stdout);
+			sep = ", ";
+			printf("%d", i);
+		}
+	}
 	for (i = n; i <= 98; i++, k++)
 	{
 		if (k > 0)
 		{
 			putchar(',');
 			putchar(' ');
-		}
-		if (n < 0)
-		{
-			for (i = n; i <= 98; i++, j++)
-			{
-				if (j > 0)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				printf("%d", i);
-			}
 		}
 		printf("%d", i);
 	}
