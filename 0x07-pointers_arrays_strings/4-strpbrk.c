@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strpbrk - Function to print the first char in a string
  * @s: First operand
@@ -10,20 +9,18 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	if ((s == NULL) || (accept == NULL))
-	{
-		return (NULL);
-	}
+	int i;
+
 	while (*s)
 	{
-		if (_strchr(accept, *s))
+		for (i = 0; accept[i]; i++)
 		{
-			return (s);
+			if (*s == accept[i])
+			{
+				return (s);
+			}
 		}
-		else
-		{
-			s++;
-		}
+		s++;
 	}
-	return (NULL);
+	return ('\0');
 }
