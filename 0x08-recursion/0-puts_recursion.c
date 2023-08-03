@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * _puts_recursion - Puts function
+ * @s: Operand
+ *
+ * Return: Always 0 (Success)
+ */
+
+void _puts_recursion(char *s)
+{
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return (0);
+	}
+	_putchar(*s);
+	_puts_recursion(++s);
+}
