@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * print_args - Function that prints all arguments
  * @argc: First operand
@@ -14,6 +14,7 @@ void print_args(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		printf("%s\n", argv[i]);
+		_putchar(argv[i]);
+		_putchar('\n');
 	}
 }
